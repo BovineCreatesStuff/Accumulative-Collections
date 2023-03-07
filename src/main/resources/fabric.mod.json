@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "acollections",
+	"version": "${version}",
+	"name": "Accumulative Collections",
+	"description": "This mod tries to add some old features back into minecraft while adding some new ones!",
+	"authors": [
+		"BovineCreatesStuff (Bovine)!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT License",
+	"icon": "assets/acollections/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bovine.acollections.ACollections"
+		],
+		"client": [
+			"net.bovine.acollections.ACollectionsClient"
+		],
+		"fabric-datagen": [
+			"net.bovine.acollections.ACollectionsDataGenerator"
+		]
+	},
+	"mixins": [
+		"acollections.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.17",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
